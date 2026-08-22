@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    float s1,s2,s3,area,sp;
+    printf("Enter three sides of a triangle :");
+    scanf("%f%f%f", &s1,&s2,&s3);
+   
+    sp= (s1+s2+s3)/2;
+    area = sqrt(sp*(sp-s1)*(sp-s2)*(sp-s3));
+    printf("Area of triangle is %f \n",area);
+     
+    return 0;
+}
